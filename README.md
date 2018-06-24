@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/PLATYPUSCO007/CrediHogAR-Backend.svg?branch=master)](https://travis-ci.org/PLATYPUSCO007/CrediHogAR-Backend)
+[![Build Status](https://travis-ci.org/PLATYPUSCO007/Prueba-ATDD-Swing.svg?branch=master)](https://travis-ci.org/PLATYPUSCO007/Prueba-ATDD-Swing)
 
 ***
 
