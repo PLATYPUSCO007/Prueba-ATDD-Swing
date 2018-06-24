@@ -12,7 +12,6 @@ import org.assertj.swing.edt.FailOnThreadViolationRepaintManager;
 import org.assertj.swing.edt.GuiActionRunner;
 import org.assertj.swing.fixture.FrameFixture;
 
-
 /**
  *
  * @author Bautista
@@ -20,8 +19,7 @@ import org.assertj.swing.fixture.FrameFixture;
 public class ventanaTest {
 
     private FrameFixture window;
-    
-            
+
     @Given("^inicializo una ventana$")
     public void inicializo_una_ventana() {
         FailOnThreadViolationRepaintManager.install();
@@ -36,8 +34,10 @@ public class ventanaTest {
 
     @Then("^debe ser visible$")
     public void debe_ser_visible() {
-        window.requireVisible();
+        window.textBox().enterText("Some random text");
+        window.button().click();
+        window.label().requireText("Some random text");
+        window.cleanUp();
     }
 
 }
-
